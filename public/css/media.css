@@ -1,0 +1,100 @@
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    /*padding: 0 20px;*/
+  }
+
+  .container .menu-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container a#logo {
+    margin-right: 5px;
+  }
+
+  .container #navbars {
+    display: none;
+  }
+
+  .container .side-menu {
+    display: none;
+  }
+
+  .signup-form {
+    padding: 40px 50px;
+    width: 70%;
+  }
+
+  .showcase {
+    height: 1000px;
+    background-size: auto;
+  }
+
+  .box {
+    top: 55%;
+    left: 58%;
+    width: 680px;
+  }
+
+  .box img {
+    height: 320px;
+    left: 0;
+  }
+
+  .button-box {
+    display: block;
+    text-align: center;
+  }
+
+  .box .video-container {
+    margin-bottom: 30px;
+  }
+
+  .right-content {
+    display: block;
+    flex: 2;
+  }
+
+  .login-remove img {
+    display: none;
+  }
+
+  .login-remove {
+    padding: 50px 60px 0 60px;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .container a#logo {
+    margin-right: 50px;
+  }
+
+  .left {
+    padding: 30px 15px 30px 30px;
+    border-left: none;
+    /*border-right: 1px solid #dbdbdb;*/
+    width: 180px;
+    /*height: 100%;*/
+    font-size: .9rem;
+    text-align: center;
+    display: block;
+  }
+
+  .login-remove img {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .login-remove {
+    padding: 50px 20px 0 20px;
+  }
+}

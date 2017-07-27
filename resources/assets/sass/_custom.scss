@@ -1,0 +1,13 @@
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.navbar-brand {
+  height: 62px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li a {
+    padding: 20px 18px !important;
+  }
+}
