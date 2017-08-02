@@ -11,7 +11,8 @@
       <div class="form-container block">
         @if (session('success'))
             <div class="signin-msg reset-success"><strong>{{ session('success') }}</strong></div>
-        @else
+        @endif
+        @if (session('error'))
             <div class="signin-msg reset-error"><strong>{{ session('error') }}</strong></div>
         @endif
         <a id="newPost" href="{{route('create')}}">Post New Thread</a>
