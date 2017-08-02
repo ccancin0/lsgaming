@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{config('app.name', 'OGaming')}} | {{$title}}</title>
+  <title>{{$title}} | {{config('app.name', 'OGaming')}}</title>
   <link rel="stylesheet" href="{{asset('css/main.css')}}">
   {{-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> --}}
   <link rel="stylesheet" href="{{asset('css/media.css')}}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
-    <header class="nav-wrapper {{$class[0]}}">
+    <header class="nav-wrapper {{$class}}">
       <nav class="container">
         <a id="logo" href="{{ url('/') }}"></a>
         <a id="navbars" href="javascript:">
@@ -25,7 +25,7 @@
         <div class="side-menu">
           <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a>
           <a href="{{ route('addCredit') }}"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Astros</a>
-          <a href="#"><i class="fa fa-forumbee" aria-hidden="true"></i>Forums</a>
+          <a href="{{route('forums')}}"><i class="fa fa-forumbee" aria-hidden="true"></i>Forums</a>
           <a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i>Support</a>
           @if (Auth::guest())
             <a href="{{ route('login') }}"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
@@ -44,11 +44,11 @@
         <div class="menu-nav">
           <a id="games" href="new.php">NEWS</a>
           <a href="{{ route('addCredit') }}">ASTROS</a>
-          <a href="forum.php">FORUMS</a>
+          <a href="{{route('forums')}}">FORUMS</a>
           <a href="support.php">SUPPORT</a>
           @if (Auth::guest())
             <a id="login" href="{{ route('login') }}">LOGIN</a>
-            <a id="signup" href="{{ route('register') }}"><img src="./img/signup.png"></a>
+            <a id="signup" href="{{ route('register') }}"><img src="/../img/signup.png"></a>
           @else
             <div class="loggedIn">
               <i class="fa fa-user-circle" aria-hidden="true"></i>

@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    if( $(window).scrollTop() > 200) {
+    if( $(window).scrollTop() > 30) {
       $('.nav-wrapper').addClass('nav-fixed');
       // $('.sub-nav').css('background: none repeat scroll 0 0 #5f5f5f;');
     }else {

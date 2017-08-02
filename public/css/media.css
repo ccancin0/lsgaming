@@ -67,6 +67,19 @@
   .left {
     display: none;
   }
+
+  .reset-pass, .reset-success {
+    width: 70%;
+  }
+
+  .form-container .forum-type {
+    padding: 40px;
+  }
+
+  .bg {
+    background: url(../img/rf3.jpg) no-repeat center;
+    height: 1000px;
+  }
 }
 
 @media (min-width: 1024px) {

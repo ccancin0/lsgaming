@@ -20,3 +20,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
   {{-- <script src="{{asset('js/app.js')}}"></script> --}}
   <script src="{{asset('js/main.js')}}"></script>
+  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('article-ckeditor');
+  </script>

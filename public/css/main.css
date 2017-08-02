@@ -165,7 +165,7 @@ html {
 }
 
 .menu-nav .loggedIn span {
-  color: #F66F20;
+  color: #FAA634;
 }
 
 .sub-nav {
@@ -176,6 +176,7 @@ html {
   top: 100%;
   right: 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: .9;
 }
 
 .sub-nav a {
@@ -258,10 +259,9 @@ sub-nav a i.fa-envelope-o {
 
 .flex {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  align-items: center;
-  text-align: end;
+  padding: 40px 30px;
 }
 
 .signup-form h1 {
@@ -275,16 +275,23 @@ sub-nav a i.fa-envelope-o {
   align-items: flex-start;
 }
 
+.form-reset {
+  background: #FFFFFF;
+  padding-top: 50px;
+}
+
 /*.signup-form .reset .email-text {
   margin-right: 15px;
 }*/
 
 .signup-form .reset {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   padding: 13px 15px;
-  margin-right: 30px;
+  /*margin-right: 30px;*/
   font-size: 1.3rem;
   /*float: left;*/
+  flex: 1;
+  margin: 0;
 }
 
 .signup-form span {
@@ -340,17 +347,30 @@ sub-nav a i.fa-envelope-o {
 }
 
 .signup-form .btn-reset {
-  width: 40%;
+  width: 45%;
   font-size: 15px;
   /*margin: 0 auto;*/
   margin-top: 15px;
   /*display: block;*/
 }
 
+.signup-form .reset-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.pad {
+  flex-flow: column;
+}
+
+.signup-form .btn-reset i {
+  margin-right: 10px;
+}
+
 .signup-form #email {
   /*margin: 0 auto;*/
   border-radius: 5px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 /* Signup Form */
@@ -429,6 +449,10 @@ sub-nav a i.fa-envelope-o {
   border-radius: 5px;
   font-size: 1.2rem;
   padding: 20px 10px;
+  margin: 0 auto;
+  /*width: 70%;*/
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .reset-success {
@@ -438,6 +462,9 @@ sub-nav a i.fa-envelope-o {
   font-size: 1.2rem;
   border-radius: 5px;
   border-color: #D0E9C6;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .log-form input:not(.checkbox) {
@@ -684,6 +711,10 @@ sub-nav a i.fa-envelope-o {
   position: absolute;
   right: -1px;
   top: -1px;
+}
+
+.clear {
+  clear: both;
 }
 
 .astros h4 {
@@ -1020,12 +1051,248 @@ sub-nav a i.fa-envelope-o {
   font-size: 1.2rem;
 }
 
+/*Forum */
+.form-container .forum-type {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.forum-type .forum-title {
+  flex: 3;
+}
+
+.forum-title i {
+  float: left;
+  font-size: 3rem;
+  padding: 12.6px;
+  color: orange;
+}
+
+.forum-title .forum-left {
+  display: flex;
+  flex-flow: column;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.forum-left a {
+  font-weight: bold;
+  margin-bottom: 5px;
+  /*width: 25%;*/
+}
+
+.forum-left p {
+  font-size: 14px;
+}
+
+.forum-left a:hover {
+  text-decoration: underline;
+}
+
+.forum-type .forum-right {
+  flex: 1;
+}
+
+/* Announcements */
+/*.bg {
+  background: url(../img/rf3.jpg) no-repeat center;
+  height: 1000px;
+}*/
+
+.block {
+  display: block;
+}
+
+.form-container a#newPost {
+  float: right;
+  padding: 10px 15px;
+  background: #1C89BB;
+  margin-right: 20px;
+  color: white;
+  display: block;
+}
+
+.form-container a#newPost:hover {
+  background: #6A6A6A;
+}
+
+.thread-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  flex-flow: column;
+  line-height: 1.5rem;
+}
+
+.thread-container .header {
+  background: orange;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  height: 45px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.header #title {
+  flex: 9;
+  padding-left: 65px;
+}
+
+.header #start-date {
+  flex: 3;
+  text-align: center;
+}
+
+.header #replies {
+  flex: 3;
+  text-align: center;
+}
+
+.header #views {
+  flex: 2;
+  text-align: center;
+}
+
+.header #last-msg {
+  flex: 3;
+  text-align: center;
+  flex-grow: 4;
+}
+
+.thread-container .thread {
+  display: flex;
+  /*flex-flow: row;*/
+  align-items: center;
+  padding: 10px;
+}
+
+.thread p {
+  font-size: 13px;
+}
+
+.thread h3 {
+  font-weight: bold;
+}
+
+.thread .thread-title {
+  flex: 9;
+}
+
+.thread .thread-title a:hover {
+  /*opacity: .9;
+  color: grey;*/
+  text-decoration: underline;
+  bor
+}
+
+.thread .thread-title a i {
+  font-size: 3rem;
+  margin-right: 20px;
+  float: left;
+}
+
+.thread .thread-date {
+  flex: 2;
+  text-align: center;
+}
+
+.thread .thread-date i {
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+
+.thread .thread-msg {
+  flex: 3;
+  text-align: center;
+}
+
+/* Create Post */
+.form-container .create-form {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 50%;
+}
+
+.align {
+  justify-content: center;
+}
+
+.create-form input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.create-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.create-form h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.create-form button {
+  padding: 5px;
+  border-radius: 5px;
+  background: orange;
+}
+
+.create-form button:hover {
+  cursor: pointer;
+}
+
+/* Show Forum */
+.show {
+  font-size: 1.5rem;
+  text-align: center;
+  height: 150px;
+}
+
+.show a {
+  background: orangered;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.show .body-content {
+  padding: 10px;
+}
+
+.show .buttons {
+  padding: 10px;
+}
+
+.show .buttons form {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.show button:hover {
+  cursor: pointer;
+}
+
+.show button {
+  background: red;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+}
+
 /* Footer */
 footer {
   font-size: 13px;
   padding: 20px 0;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 30px;
+  /*margin-bottom: 25px;*/
   color: #666;
   font-weight: 600;
   /*clear: both;*/
